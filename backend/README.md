@@ -24,8 +24,50 @@ Params:
 
 ### Buscar por UID:
 Metodo: GET
+
 HOST: http://localhost:4000
-Endpoint: /list-cfdis/page/num
+
+Endpoint: /search-UID/uid
+
 Params:
-- page: Indica número de página a consultar, por default posiciona en la página 1.
-- num: Indica el limite de resultados para mostrar, por default retorna 100 registros
+- uid: Es el identificador interno para la plataforma de Factura.com asignado al CFDI cuando lo creamos
+
+### Enviar CFDI por email:
+Metodo: GET
+
+HOST: http://localhost:4000
+
+Endpoint: /send-CFDI/uid
+
+Params:
+- uid: Es el identificador interno para la plataforma de Factura.com asignado al CFDI cuando lo creamos
+
+### Consultar un cliente:
+Metodo: GET
+
+HOST: http://localhost:4000
+
+Endpoint: /client-info/rfc
+
+Params:
+- rfc: Indica el RFC del cliente a buscar
+
+### Cancelar Factura:
+Metodo: POST
+
+HOST: http://localhost:4000
+
+Endpoint: /cancel-CFDI
+
+Body ejemplo:
+- ![image](https://github.com/user-attachments/assets/4d43ed9d-4798-4bfa-8462-011fd5f2cc55)
+
+
+
+
+
+
+
+
+
+
