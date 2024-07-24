@@ -13,8 +13,11 @@ A continuacion presentaremos la serie de peticiones que se pueden realizar a est
 
 ### Listar Facturas:
 Metodo: GET
+
 HOST: http://localhost:4000
+
 Endpoint: /list-cfdis/page/num
+
 Params:
 - page: Indica número de página a consultar, por default posiciona en la página 1.
 - num: Indica el limite de resultados para mostrar, por default retorna 100 registros
