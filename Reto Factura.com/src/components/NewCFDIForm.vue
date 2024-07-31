@@ -350,7 +350,7 @@
     const submitConcepto = () => {
         if(validateComceptoForm()) {
             let conceptoOriginal = conceptoData.value;
-            let concepto = JSON.parse(JSON.stringify(conceptoOriginal))
+            let concepto = JSON.parse(JSON.stringify(conceptoOriginal));
 
             concepto.Cantidad = parseInt(concepto.Cantidad);
             concepto.ValorUnitario = parseFloat(concepto.ValorUnitario);
