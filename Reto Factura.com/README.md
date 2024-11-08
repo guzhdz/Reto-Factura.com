@@ -5,10 +5,10 @@ El backend fue programado en vue.js con el framework de vuetify incluido. Para e
 - Ejecuta el comando npm install (Hay que tener instalada la ultima version de node.js)
 - Ejecuta el comando npm run dev
 - Ahora deberia indicarle un link al cual ingresar donde vera ejecutada la pagina
-- Nota: Asegurarse de estar ejecutando antes el backend ya que de ahi se hacen peticiones para obteenr los datos y realziar operaciones.
+- Nota: Asegurarse de estar ejecutando antes el backend ya que de ahi se hacen peticiones para obtener los datos y realziar operaciones.
 
 Nota: Hay que tomar en cuanta que todo esto es en local, si se realiza un despliegue, se deberia cambair parte del codigo para las peticiones al backend,
-ya que son hechas directamente al URL http://localhost:4000 que es elq ue se crea al ejecutar el backend localmente.
+ya que son hechas directamente al URL http://localhost:4000 que es el que se crea al ejecutar el backend localmente.
 
 ## Listar facturas
 ![image](https://github.com/user-attachments/assets/e6e50e63-39e1-4a10-ba34-85b589bf468c)
