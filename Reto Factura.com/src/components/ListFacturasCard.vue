@@ -26,14 +26,14 @@
 
     const getFacturas = async () => {
         loadingData.value = true;
-        const response = await axios.get(`http://localhost:4000/list-cfdis/1/${numRes.value}`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/list-cfdis/1/${numRes.value}`);
         facturas.value = response.data.data.filter(factura => factura.Status != "eliminada");
         loadingData.value = false;
     };
 
     const searchUID = async () => {
         if (inputUID.value) {
-            const response = await axios.get(`http://localhost:4000/search-UID/${inputUID.value}`);
+            const response = await axios.get(`https://reto-factura-com.onrender.com/search-UID/${inputUID.value}`);
             if(response.data.status != "error")
                 facturas.value = [response.data.data];
             else

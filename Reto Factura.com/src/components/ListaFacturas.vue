@@ -29,7 +29,7 @@
         let message = "";
         message = "Enviando CFDI...";
         openSnackbar(message);
-        const response = await axios.get(`http://localhost:4000/send-CFDI/${uid}`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/send-CFDI/${uid}`);
         message = response.data.message;
         openSnackbar(message);
         emit('reload');
@@ -47,7 +47,7 @@
                 sustituto: info.motivo != '01'? null : info.UID
             }
 
-            const response = await axios.post(`http://localhost:4000/cancel-CFDI`, body);
+            const response = await axios.post(`https://reto-factura-com.onrender.com/cancel-CFDI`, body);
             loadingDialog.value = false;
             message = response.data.message;
             openSnackbar(message);

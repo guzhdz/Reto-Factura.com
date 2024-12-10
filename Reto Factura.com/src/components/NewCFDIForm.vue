@@ -150,7 +150,7 @@
 
     //Metodos
     const getClientes = async() => {
-        const response = await axios.get(`http://localhost:4000/listClients`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/listClients`);
         if(response.data.status == "success") {
             catalogos.value.clientesCatalogo = response.data.data.map(cliente => {
                 return {
@@ -190,7 +190,7 @@
     }
 
     const getUsoCFDI = async() => {
-        const response = await axios.get(`http://localhost:4000/use-CFDI-catalog`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/use-CFDI-catalog`);
         if(response.data.response == "success") {
             catalogos.value.usoCFDICatalogo = response.data.data.map(uso => {
                 return {
@@ -202,7 +202,7 @@
     }
 
     const getSeries = async() => {
-        const response = await axios.get(`http://localhost:4000/series-catalog`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/series-catalog`);
         if(response.data.status == "success") {
             catalogos.value.seriesCatalogo = response.data.data.map(serie => {
                 return {
@@ -215,7 +215,7 @@
     }
 
     const getMetodosPago = async() => {
-        const response = await axios.get(`http://localhost:4000/metodos-de-pago-catalog`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/metodos-de-pago-catalog`);
         if(response.data.response == "success") {
             catalogos.value.metodosPagoCatalogo = response.data.data.map(metodo => {
                 return {
@@ -227,7 +227,7 @@
     }
 
     const getFormasPago = async() => {
-        const response = await axios.get(`http://localhost:4000/formas-de-pago-catalog`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/formas-de-pago-catalog`);
         if(response.data.response == "success") {
             catalogos.value.formasPagoCatalogo = response.data.data.map(forma => {
                 return {
@@ -239,7 +239,7 @@
     }
 
     const getMonedas = async() => {
-        const response = await axios.get(`http://localhost:4000/monedas-catalog`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/monedas-catalog`);
         if(response.data.response == "success") {
             catalogos.value.monedasPagoCatalogo = response.data.data.map(moneda => {
                 return {
@@ -251,7 +251,7 @@
     }
 
     const getClavesUnidad = async() => {
-        const response = await axios.get(`http://localhost:4000/claves-unidad-catalog`);
+        const response = await axios.get(`https://reto-factura-com.onrender.com/claves-unidad-catalog`);
         if(response.data.response == "success") {
             catalogos.value.clavesUnidadCatalogo = response.data.data.map(clave => {
                 return {
@@ -266,7 +266,7 @@
     const crearCFDI = async(factura) => {
         const body = factura;
 
-        const response = await axios.post(`http://localhost:4000/nuevo-CFDI`, body);
+        const response = await axios.post(`https://reto-factura-com.onrender.com/nuevo-CFDI`, body);
         if(response.data.response == "success") {
             return {status: true, message: response.data.message};
         } else if(response.data.response == "error") {
