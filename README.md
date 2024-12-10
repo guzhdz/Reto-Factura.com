@@ -7,5 +7,5 @@ en el archivo adjunto de a continuacion:
 ## Backend
 - Link: https://github.com/guzhdz/Reto-Factura.com/tree/main/backend
 
-# Forntend
+# Frontend
 - Link: https://github.com/guzhdz/Reto-Factura.com/tree/main/Reto%20Factura.com
