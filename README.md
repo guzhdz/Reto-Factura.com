@@ -1,4 +1,4 @@
-# Frontend Challenge Factura.com
+# Factura.com Frontend Challenge
 
 Tha challenge was to create a we application (backend and frontend) where you can create and list CFDIS, all the requirements are in this document:
 
