@@ -1,7 +1,6 @@
-# Reto Frontend Factura.com
+# Frontend Challenge Factura.com
 
-El reto consistia en hacer una pequeña pagina web, tanto su pequeño Backend como Fontend, todas las especificaciones vienen
-en el archivo adjunto de a continuacion:
+Tha challenge was to create a we application (backend and frontend) where you can create and list CFDIS, all the requirements are in this document:
 [Reto Frontend Factura.com.pdf](https://github.com/user-attachments/files/18070104/Reto.Frontend.Factura.com.pdf)
 
 ## Backend
@@ -10,3 +9,4 @@ en el archivo adjunto de a continuacion:
 # Frontend
 - Link: https://github.com/guzhdz/Reto-Factura.com/tree/main/Reto%20Factura.com
 
+# Results: 
